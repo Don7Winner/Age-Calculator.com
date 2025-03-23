@@ -10,9 +10,7 @@ body {
   padding: 0;
   margin: 0;
 }
-main {
-  /* margin-right: 2rem; */
-}
+
 form {
   background-color: hsl(0, 0%, 100%);
   border-radius: 1rem;
@@ -56,7 +54,6 @@ input {
 }
 input::placeholder {
   color: hsl(0, 1%, 44%);
-
   font-weight: 700;
 }
 .ageInput p {
@@ -69,7 +66,7 @@ hr {
   margin: 0 0 2rem 0;
 }
 .ageOutput {
-  font-size: 4rem;
+  font-size: 3.6rem;
   font-weight: 800;
 }
 span {
@@ -82,7 +79,7 @@ span {
     width: 450px;
   }
   .ageOutput {
-    font-size: 4rem;
+    font-size: 3.6rem;
   }
 }
 @media (max-width: 510px) {
@@ -91,11 +88,11 @@ span {
   }
   input {
     width: 100%;
+    padding-left: 0.5rem;
   }
 
   input::placeholder {
     font-size: 1rem;
-    padding: 1rem;
   }
   .icon-container img {
     right: 0;
@@ -105,22 +102,27 @@ span {
     margin-bottom: 3rem;
   }
   .ageOutput {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
 }
 
 @media (max-width: 400px) {
+  body {
+    padding: 30px;
+  }
   form {
     width: 100%;
-    margin: 3rem 2rem;
   }
   .icon-container img {
     right: 0;
-    transform: translate(170%, 5%);
+    transform: translate(130%, 5%);
+  }
+  .ageOutput {
+    font-size: 2.6rem;
   }
 }
 @media (max-width: 350px) {
-  .icon-container img {
-    transform: translate(130%, 5%);
+  form {
+    padding: 2rem 1rem;
   }
 }
